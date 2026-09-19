@@ -1,0 +1,61 @@
+{
+
+  "effortLevel": "high",
+
+  "promptCacheTtl": "1h",
+
+  "subagentPromptCacheTtl": "1h",
+
+  "workflowSizeGuideline": "medium",
+
+  "modelSettings": {
+
+    "claude-fable-5-1": { "effortLevel": "high" },
+
+    "claude-opus-5": { "effortLevel": "high" },
+
+    "claude-sonnet-5": { "effortLevel": "medium" }
+
+  },
+
+  "permissions": {
+
+    "defaultMode": "acceptEdits",
+
+    "allow": [
+
+      "Bash(git status)",
+
+      "Bash(git diff*)",
+
+      "Bash(git log*)",
+
+      "Bash(git show*)"
+
+    ],
+
+    "deny": [
+
+      "Bash(git push*)",
+
+      "Bash(git reset --hard*)",
+
+      "Bash(rm -rf*)",
+
+      "Bash(sudo*)"
+
+    ]
+
+  },
+
+  "env": {
+
+    "CLAUDE_CODE_SUBAGENT_MODEL": "opus",
+
+    "CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH": "2",
+
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "0"
+
+  }
+
+}

@@ -1,0 +1,25 @@
+{
+
+  "name": "rogger-agent-team",
+
+  "description": "Fable 5.1 orchestration for Claude Code: skill, agent lanes, settings.",
+
+  "owner": { "name": "Rogger Roberto Nunes de Melo", "url": "https://github.com/roggern7" },
+
+  "plugins": [
+
+    {
+
+      "name": "rogger-agent-team",
+
+      "source": "./",
+
+      "description": "Fable 5.1 decides, Opus 5 / Sonnet 5 / Haiku execute. Skill + five agent lanes.",
+
+      "version": "1.0.0"
+
+    }
+
+  ]
+
+}

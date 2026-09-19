@@ -1,0 +1,21 @@
+{
+
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+
+  "name": "rogger-agent-team",
+
+  "displayName": "Rogger Agent Team",
+
+  "version": "1.0.0",
+
+  "description": "Run Claude Fable 5.1 as architect and route execution to Opus 5, Sonnet 5, and Haiku lanes. Wiring patterns, effort routing, cost levers, failure modes, and pinned agent lanes.",
+
+  "author": { "name": "Rogger Roberto Nunes de Melo", "url": "https://github.com/roggern7" },
+
+  "repository": "https://github.com/roggern7/rogger-agent-team",
+
+  "license": "MIT",
+
+  "keywords": ["fable", "claude-fable-5-1", "orchestration", "subagents", "advisor", "cost"]
+
+}

@@ -61,6 +61,8 @@ experimental:
 ---
 ```
 
+The plugin's agents declare their own `maxTurns` in `agents/*.md` and reserve the last ~20% of turns for the report, since a run that hits the limit ends without one.
+
 Parallel builders on one repo: add `isolation: worktree` to `opus-builder` so each runs in its own git worktree and merges back.
 
 Read-only lanes (`haiku-scout`, `fresh-verifier`, `fable-architect`) are read-only by prompt; they still hold `Bash`. To enforce, add a permission deny rule for write commands or copy them to `.claude/agents/` with `permissionMode: plan`.

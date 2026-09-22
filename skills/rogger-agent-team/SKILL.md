@@ -71,6 +71,7 @@ Detail in `reference/failure-modes.md`.
 - **Early stop.** Long runs may end with "I'll now run X" and no tool call. Autonomous-run block. Interactive: `continue`.
 - **Context anxiety.** Never show Fable a remaining-token count.
 - **Blocking on subagents.** Spawn async. Resume named agents with `SendMessage` instead of respawning.
+- **Oversized verifier batches.** Send `fresh-verifier` at most ~8 items (findings or claims) per run. Each item takes several reads to refute, so a big batch hits `maxTurns` before the report. Split larger batches across verifiers in parallel.
 - **Forks run on Fable.** `subagent_type: "fork"` inherits the full transcript and the parent model, and ignores `CLAUDE_CODE_SUBAGENT_MODEL`. Fork only when the task needs the whole conversation.
 - **Agent teams auto-form.** With teams enabled, any named subagent becomes a teammate. Set env to `0` for plain delegation.
 

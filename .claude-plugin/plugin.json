@@ -6,7 +6,7 @@
 
   "displayName": "Rogger Agent Team",
 
-  "version": "1.0.0",
+  "version": "1.1.0",
 
   "description": "Run Claude Fable 5.1 as architect and route execution to Opus 5, Sonnet 5, and Haiku lanes. Wiring patterns, effort routing, cost levers, failure modes, and pinned agent lanes.",
 
